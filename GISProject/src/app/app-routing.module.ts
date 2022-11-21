@@ -1,15 +1,18 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LowIncomeComponent } from './components/low-income/low-income.component';
-import { MBRComponent } from './components/mbr/mbr.component';
-import { PartMatComponent } from './components/part-mat/part-mat.component';
-import { PopulationsComponent } from './components/populations/populations.component';
+import { Step1Component } from './components/step1/step1.component';
+import { HomeComponent } from './components/home/home.component';
+import { Step3Component } from './components/step3/step3.component';
+import { Step2Component } from './components/step2/step2.component';
+import { Step4Component } from './components/step4/step4.component';
 
 const routes: Routes = [
-  { path: 'lowin', component: LowIncomeComponent },
-  { path: 'mbr', component: MBRComponent},
-  { path: 'part-mat', component: PartMatComponent},
-  { path: 'populations', component: PopulationsComponent},
+  { path: 'step1', component: Step1Component },
+  { path: 'home', component: HomeComponent},
+  { path: 'step3', component: Step3Component},
+  { path: 'step2', component: Step2Component},
+  { path: 'step4', component: Step4Component},
+  { path: 'step5', component: Step4Component},
 ];
 
 @NgModule({
@@ -18,9 +21,9 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const rountingComponents = [
- LowIncomeComponent,
- MBRComponent,
- PartMatComponent,
- PopulationsComponent,
+ Step1Component,
+ HomeComponent,
+ Step3Component,
+ Step2Component,
 ];
 

@@ -5,20 +5,26 @@ import { GoogleMapsModule } from '@angular/google-maps'
 
 
 import { AppComponent } from './app.component';
-import { PartMatComponent } from './components/part-mat/part-mat.component';
-import { PopulationsComponent } from './components/populations/populations.component';
-import { LowIncomeComponent } from './components/low-income/low-income.component';
-import { MBRComponent } from './components/mbr/mbr.component';
+import { Step3Component } from './components/step3/step3.component';
+import { Step2Component } from './components/step2/step2.component';
+import { Step1Component } from './components/step1/step1.component';
+import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule, rountingComponents } from './app-routing.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { Step4Component } from './components/step4/step4.component';
+import { Step5Component } from './components/step5/step5.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PartMatComponent,
-    PopulationsComponent,
-    LowIncomeComponent,
-    MBRComponent
+    Step3Component,
+    Step2Component,
+    Step1Component,
+    HomeComponent,
+    NavbarComponent,
+    Step4Component,
+    Step5Component
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-part-mat',
-  templateUrl: './part-mat.component.html',
-  styleUrls: ['./part-mat.component.css']
+  selector: 'app-step3',
+  templateUrl: './step3.component.html',
+  styleUrls: ['./step3.component.css']
 })
-export class PartMatComponent implements OnInit {
+export class Step3Component implements OnInit {
 
   constructor() { }
 

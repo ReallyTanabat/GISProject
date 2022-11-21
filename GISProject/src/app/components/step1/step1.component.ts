@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mbr',
-  templateUrl: './mbr.component.html',
-  styleUrls: ['./mbr.component.css']
+  selector: 'app-step1',
+  templateUrl: './step1.component.html',
+  styleUrls: ['./step1.component.css']
 })
-export class MBRComponent implements OnInit {
+export class Step1Component implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
   mapOptions: google.maps.MapOptions = {
     center: { lat: 38.9987208, lng: -77.2538699 },
