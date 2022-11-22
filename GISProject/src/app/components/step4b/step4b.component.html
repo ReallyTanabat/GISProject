@@ -9,22 +9,18 @@
         B) Calculate the AVG(PM 2.5) by country (show the results in a decreasing order).
     </p>
 </div>
-<!-- <div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 50mm;"> 
+<div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 50mm;"> 
     <div class="table text-center mx-auto" style="width: 100%; border-style: solid; border-radius: 5mm;">
         <div class="row mx-auto" style="background-color:#426D54; color:white; border-style: solid; border-color: #426D54; border-radius: 4mm 4mm 0mm 0mm">
-            <div class="col">No.</div>
             <div class="col">Country</div>
-            <div class="col">City</div>
-            <div class="col">PM 2.5</div>
+            <div class="col">Averaging of PM 2.5</div>
         </div>
-        <div class="row" *ngFor="let i of dataCheck">
-            <div class="col-3">{{i.No}}</div>
-            <div class="col-3">{{i.Country}}</div>
-            <div class="col-3">{{i.City}}</div>
-            <div class="col-3">{{i.PM}}</div>
+        <div class="row" *ngFor="let i of object">
+            <div class="col ">{{i.county}}</div>
+            <div class="col ">{{i.avgPm25}}</div>
         </div>
     </div>
-</div> -->
+</div>
 <div class="row my-5 mx-5">
     <div class="col float-start" style="font-size: 30px;"> 
         <a routerLink="/step4" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>

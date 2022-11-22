@@ -17,11 +17,11 @@
             <div class="col">City</div>
             <div class="col">PM 2.5</div>
         </div>
-        <div class="row" *ngFor="let i of dataCheck">
-            <div class="col-3">{{i.No}}</div>
-            <div class="col-3">{{i.Country}}</div>
-            <div class="col-3">{{i.City}}</div>
-            <div class="col-3">{{i.PM}}</div>
+        <div class="row" *ngFor="let i of object">
+            <div class="col-3">{{i.id}}</div>
+            <div class="col-3">{{i.county}}</div>
+            <div class="col-3">{{i.city}}</div>
+            <div class="col-3">{{i.pm25}}</div>
         </div>
     </div>
 </div>
