@@ -14,22 +14,22 @@
         <div class="input-group-prepend">
             <div class="input-group-text" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
         </div>
-        <input class="form-control py-2 border-right-0 border" [(ngModel)]="texting" type="text" placeholder="Search">
+        <input class="form-control py-2 border-right-0 border" [(ngModel)]="year" type="text" placeholder="Search">
     </div>
 </div>
-<div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 50mm;"> 
-    <div class="table text-center mx-auto" style="width: 100%; border-style: solid; border-radius: 5mm;">
+<div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 50mm; margin-top:10mm ;"> 
+    <div *ngIf="toShow" class="table text-center mx-auto" style="width: 100%; border-style: solid; border-radius: 5mm;">
         <div class="row mx-auto" style="background-color:#426D54; color:white; border-style: solid; border-color: #426D54; border-radius: 4mm 4mm 0mm 0mm">
             <div class="col">No.</div>
             <div class="col">Country</div>
             <div class="col">City</div>
             <div class="col">PM 2.5</div>
         </div>
-        <div class="row" *ngFor="let i of dataCheck">
-            <div class="col-3">{{i.No}}</div>
-            <div class="col-3">{{i.Country}}</div>
-            <div class="col-3">{{i.City}}</div>
-            <div class="col-3">{{i.PM}}</div>
+        <div class="row" *ngFor="let i of object">
+            <div class="col-3">{{i.id}}</div>
+            <div class="col-3">{{i.county}}</div>
+            <div class="col-3">{{i.city}}</div>
+            <div class="col-3">{{i.pm25}}</div>
         </div>
     </div>
 </div>

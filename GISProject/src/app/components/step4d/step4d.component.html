@@ -10,35 +10,45 @@
         <br>from the user.
     </p>
 </div>
-<div class="row my-5">
-    <div class="dropdown text-center mx-5 col">
-        <button class="btn btn-success dropdown-toggle px-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose Year
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" value="2012">2012</a>
-        <a class="dropdown-item" href="#" value="2013">2013</a>
-        <a class="dropdown-item" href="#" value="2014">2014</a>
-        </div>
+<div style="margin-left: 50mm; margin-right:50mm">
+    <div class="row text-center">
+        <h5 class="col"> Choose Year</h5>
+        <h5 class="col"> Choose Color</h5>
     </div>
-    <div class="dropdown text-center mx-5 col">
-        <button class="btn btn-success dropdown-toggle px-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose Color
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" value="red">Red</a>
-        <a class="dropdown-item" href="#" value="yellow">Yellow</a>
-        <a class="dropdown-item" href="#" value="blue">blue</a>
-        </div>
+    
+    <div class="row my-5">
+        <select class="form-select col" style="width: 20%;" [(ngModel)]="year"  aria-label="Default select example">
+            <option selected></option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+        </select>
+        <select class="form-select col" style="width: 20%;" [(ngModel)]="color"  aria-label="Default select example">
+            <option selected></option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="darkred">Dark Red</option>
+            <option value="darkorange">Dark Orange</option>
+            <option value="Orange">Orange</option>
+        </select>
     </div>
 </div>
-<div *ngIf="showPop" class="show number of pop">
-    <div>
-        pop1000000
+<div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 20mm; margin-top:10mm ;"> 
+    <div *ngIf="toShow" class="table text-center mx-auto" style="width: 100%; border-style: solid; border-radius: 5mm;">
+            <h2 style="color: #426D54;">{{object}} People</h2>
     </div>
 </div>
 <div class="text-center" style="margin-bottom: 50mm;">
-    <button type="button" class="btn btn-success px-5">Calculate</button>
+    <button type="button" class="btn btn-success px-5" (click)="callAP()">Calculate</button>
 </div>
 <div class="row my-5 mx-5">
     <div class="col float-start" style="font-size: 30px;"> 
