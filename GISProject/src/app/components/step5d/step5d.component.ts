@@ -1,22 +1,63 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-step5d',
   templateUrl: './step5d.component.html',
   styleUrls: ['./step5d.component.css']
 })
-export class Step5dComponent implements OnInit {
+export class Step5dComponent implements OnInit {showPop: boolean = false
+  color: string = ""
+  year: string = ""
+  dataCheck: any[] = [];
+  toShowData: any[] = []
+  toShow: boolean = false
+  object: any
+  url: string = "https://438d-1-20-61-94.ap.ngrok.io"
+  lati: any[] = []
+  longti: any[] = []
+  positioning: any[] = []
+  
+  // mapOptions: google.maps.MapOptions = {
+  //   center: { lat: 38.9987208, lng: -77.2538699 },
+  //   zoom: 14
+  // }
+  // marker = {
+  //   position:{lat: 38.9987208, lng: -77.2538699, }
+    
+  // }
+  constructor(private http: HttpClient) { }
+  
+    ngOnInit(): void {
+      this.callAP()
+      console.log("current position 2 = ",this.positioning)
+      
+    }
 
-  constructor() { }
+    callAP(){
+        this.http.get<any>(this.url+'/api/quest5/d').subscribe(data => {
+        this.toShowData = data;
+        this.object = data.data
+        console.log("lat = ",this.object[1].latitude)
+        this.toShow = true
+        for(let i = 0; i<this.object.length;i++){
+          //this.positioning.push({ lat: this.object[i].latitude, lng: this.object[i].longitude})
+          this.positioning.push({ lat: this.object[i].longitude, lng: this.object[i].latitude})
+        }
+        
+        console.log("current position = ",this.positioning)
+        
+    })
+    }
 
-  ngOnInit(): void {
+  center: google.maps.LatLngLiteral = {
+      lat: 13.74622118,
+      lng: 100.5544779
+  };
+  zoom = 4;
+  vertices: google.maps.LatLngLiteral[] = []
+  checkFN(){
+    console.log(this.positioning)
   }
-  mapOptions: google.maps.MapOptions = {
-    center: { lat: 38.9987208, lng: -77.2538699 },
-    zoom: 14
-  }
-  marker = {
-    position: { lat: 38.9987208, lng: -77.2538699 },
-  }
-
 }

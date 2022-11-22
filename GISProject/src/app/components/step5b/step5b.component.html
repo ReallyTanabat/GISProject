@@ -10,22 +10,24 @@
     </p>
 </div>
 
-
-
-
-<div class="d-flex justify-content-center my-5">
-    <div class="my-google-map">
-        <google-map [options]="mapOptions">
-           <map-marker [position]="marker.position"></map-marker>
-        </google-map>
-     </div>
+<div class="d-flex justify-content-center">
+<google-map height="600px"
+        width="800px"
+        [center]="center"
+        [zoom]="zoom"
+        (mapClick)="addMarker($event)">
+<map-marker #marker="mapMarker"
+          *ngFor="let markerPosition of markerPositions"
+          [position]="markerPosition"
+          (mapClick)="openInfoWindow(marker)"></map-marker>
+<map-info-window>Info Window content</map-info-window>
+</google-map>
 </div>
-
 
 
 <div class="row my-5 mx-5">
     <div class="col float-start" style="font-size: 30px;"> 
-        <a routerLink="/step5a" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>
+        <a routerLink="/step5" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>
     </div>
     <div class="col text-right"> 
         <button class="btn btn-success px-4 py-3" routerLink="/step5c" routerLinkActive="active"> Next ></button>

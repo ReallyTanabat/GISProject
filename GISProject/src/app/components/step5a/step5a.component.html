@@ -9,25 +9,42 @@
         A2) Visualize all the city points of all countries.
     </p>
 </div>
-
-
-
-<div class="dropdown text-center ">
-    <button class="btn btn-success dropdown-toggle mb-5 px-5 "  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        2013
-    </button>
- 
- 
+<div style="margin-left: 50mm; margin-right:50mm">
+    <div class="row text-center">
+        <h5 class="col"> Choose Year</h5>
+        <h5 class="col"> Click to calculate</h5>
+    </div>
+    
+    <div class="row my-5">
+        <select class="form-select col" style="width: 20%;" [(ngModel)]="year"  aria-label="Default select example">
+            <option selected></option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+        </select>
+       <button class="col" (click)="callAP()">Calculate</button>
+    </div>
 </div>
-
-
-
-<div class="d-flex justify-content-center my-5">
-    <div class="my-google-map">
-        <google-map [options]="mapOptions">
-           <map-marker [position]="marker.position"></map-marker>
-        </google-map>
-     </div>
+<div class="d-flex justify-content-center">
+    <google-map height="400px"
+            width="750px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="addMarker($event)">
+  <map-marker #marker="mapMarker"
+              *ngFor="let markerPosition of markerPositions"
+              [position]="markerPosition"
+              (mapClick)="openInfoWindow(marker)"></map-marker>
+  <map-info-window>Info Window content</map-info-window>
+</google-map>
 </div>
 
 

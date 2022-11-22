@@ -14,7 +14,7 @@ export class Step4dComponent implements OnInit {
   toShowData: any[] = []
   toShow: boolean = false
   object: any
-  url: string = "http://1769-1-20-61-94.ap.ngrok.io"
+  url: string = "https://438d-1-20-61-94.ap.ngrok.io"
   constructor(private http: HttpClient) { }
   
     ngOnInit(): void {

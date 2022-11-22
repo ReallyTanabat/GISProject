@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './step4b.component.html',
   styleUrls: ['./step4b.component.css']
 })
-export class Step4bComponent implements OnInit { dataCheck: any[] = [];
+export class Step4bComponent implements OnInit {
+  dataCheck: any[] = [];
   toShowData: any[] = []
   object: any
   url: string = "http://1769-1-20-61-94.ap.ngrok.io"

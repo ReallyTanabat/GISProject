@@ -30,6 +30,8 @@ import { Step5f2Component } from './components/step5f2/step5f2.component';
 import { Step5aComponent } from './components/step5a/step5a.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

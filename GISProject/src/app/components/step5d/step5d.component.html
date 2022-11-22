@@ -12,24 +12,14 @@
 
 
 
-<div class="dropdown text-center ">
-    <button class="btn btn-success dropdown-toggle mb-5 px-5 "  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        2013
-    </button>
- 
- 
+<div class="d-flex justify-content-center">
+    <google-map height="600px"
+            width="800px"
+            [center]="center"
+            [zoom]="zoom">
+    <map-polygon [paths]="vertices"></map-polygon>
+    </google-map>
 </div>
-
-
-
-<div class="d-flex justify-content-center my-5">
-    <div class="my-google-map">
-        <google-map [options]="mapOptions">
-           <map-marker [position]="marker.position"></map-marker>
-        </google-map>
-     </div>
-</div>
-
 
 
 <div class="row my-5 mx-5">
@@ -40,3 +30,4 @@
         <button class="btn btn-success px-4 py-3" routerLink="/step5e" routerLinkActive="active"> Next ></button>
     </div>
 </div>
+
