@@ -20,6 +20,7 @@ import { Step4c2Component } from './components/step4c2/step4c2.component';
 import { Step4dComponent } from './components/step4d/step4d.component';
 import { Step4d2Component } from './components/step4d2/step4d2.component';
 import { MemberComponent } from './components/member/member.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MemberComponent } from './components/member/member.component';
     Step4c2Component,
     Step4dComponent,
     Step4d2Component,
-    MemberComponent
+    MemberComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
