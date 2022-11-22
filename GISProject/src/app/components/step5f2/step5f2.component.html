@@ -1,0 +1,42 @@
+<div style="text-align: center; margin-top: 20mm; margin-bottom: 20mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 70px;">Fifth Step</h1>
+</div>
+<div style="text-align: center; margin-bottom: 10mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 25px;">Visualize the map results on the Web</h1>
+</div>
+<div style="text-align: center; margin-bottom: 25mm;">
+    <p  style="text-align: center;">
+        F2) Visualize all the city points which are considered as “low income” (as specified in column wbinc16_text).
+    </p>
+</div>
+
+
+
+<div class="dropdown text-center ">
+    <button class="btn btn-success dropdown-toggle mb-5 px-5 "  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        2013
+    </button>
+ 
+ 
+</div>
+
+
+
+<div class="d-flex justify-content-center my-5">
+    <div class="my-google-map">
+        <google-map [options]="mapOptions">
+           <map-marker [position]="marker.position"></map-marker>
+        </google-map>
+     </div>
+</div>
+
+
+
+<div class="row my-5 mx-5">
+    <div class="col float-start" style="font-size: 30px;"> 
+        <a routerLink="/step5f1" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>
+    </div>
+    <div class="col text-right"> 
+        <button class="btn btn-success px-4 py-3" routerLink="/member" routerLinkActive="active"> Next ></button>
+    </div>
+</div>

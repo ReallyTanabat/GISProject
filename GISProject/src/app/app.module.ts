@@ -20,7 +20,15 @@ import { Step4c2Component } from './components/step4c2/step4c2.component';
 import { Step4dComponent } from './components/step4d/step4d.component';
 import { Step4d2Component } from './components/step4d2/step4d2.component';
 import { MemberComponent } from './components/member/member.component';
-import { FooterComponent } from './footer/footer.component';
+import { Step5bComponent } from './components/step5b/step5b.component';
+import { Step5cComponent } from './components/step5c/step5c.component';
+import { Step5dComponent } from './components/step5d/step5d.component';
+import { Step5eComponent } from './components/step5e/step5e.component';
+import { Step5f1Component } from './components/step5f1/step5f1.component';
+import { Step5f2Component } from './components/step5f2/step5f2.component';
+import { Step5aComponent } from './components/step5a/step5a.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +46,13 @@ import { FooterComponent } from './footer/footer.component';
     Step4dComponent,
     Step4d2Component,
     MemberComponent,
+    Step5bComponent,
+    Step5cComponent,
+    Step5dComponent,
+    Step5eComponent,
+    Step5f1Component,
+    Step5f2Component,
+    Step5aComponent,
     FooterComponent
   ],
   imports: [
