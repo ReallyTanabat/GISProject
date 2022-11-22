@@ -1,11 +1,29 @@
-<div style="text-align: center; margin-top: 20mm;  margin-bottom: 20mm;">
-    <h1 style="color: rgb(5, 3, 115); font-size: 70px;">Populations</h1>
+<div style="text-align: center; margin-top: 20mm; margin-bottom: 20mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 70px;"> Second Step</h1>
 </div>
-
-<div class="d-flex justify-content-center">
+<div style="text-align: center; margin-bottom: 20mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 25px;"> Visualizing Air Pollution (PM 2.5) on a Map</h1>
+</div>
+<div style="text-align: center; margin-bottom: 10mm;">
+    <p>
+        Create a web page to INSERT the air pollution data INTO the AirPollutionPM25 TABLE<br>
+-in a row-by-row basis-in step (1) given an input path to the input excel file. <br>The
+output of this step is two-folded:<br> the successful insertion of data rows into the table as
+well as the log file reporting data rows failed to be inserted.
+    </p>
+</div>
+<div class="d-flex justify-content-center my-5">
     <div class="my-google-map">
         <google-map [options]="mapOptions">
            <map-marker [position]="marker.position"></map-marker>
         </google-map>
      </div>
+</div>
+<div class="row my-5 mx-5">
+    <div class="col float-start" style="font-size: 30px;"> 
+        <a routerLink="/step1" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>
+    </div>
+    <div class="col text-right"> 
+        <button class="btn btn-success px-4 py-3" routerLink="/step3" routerLinkActive="active"> Next ></button>
+    </div>
 </div>

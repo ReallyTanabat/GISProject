@@ -1,1 +1,35 @@
-<p>step4 works!</p>
+<div style="text-align: center; margin-top: 20mm; margin-bottom: 20mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 70px;"> Fourth Step</h1>
+</div>
+<div style="text-align: center; margin-bottom: 10mm;">
+    <h1 style="color: rgb(0, 0, 0); font-size: 45px;"> Top countries that value greater than 50</h1>
+</div>
+<div style="text-align: center; margin-bottom: 10mm;">
+    <p>
+        A) List country and city names whose PM 2.5 values are greater than 50 in 2015.
+    </p>
+</div>
+<div style = "margin-left: 50mm; margin-right: 50mm; margin-bottom: 50mm;"> 
+    <div class="table text-center mx-auto" style="width: 100%; border-style: solid; border-radius: 5mm;">
+        <div class="row mx-auto" style="background-color:#426D54; color:white; border-style: solid; border-color: #426D54; border-radius: 4mm 4mm 0mm 0mm">
+            <div class="col">No.</div>
+            <div class="col">Country</div>
+            <div class="col">City</div>
+            <div class="col">PM 2.5</div>
+        </div>
+        <div class="row" *ngFor="let i of dataCheck">
+            <div class="col-3">{{i.No}}</div>
+            <div class="col-3">{{i.Country}}</div>
+            <div class="col-3">{{i.City}}</div>
+            <div class="col-3">{{i.PM}}</div>
+        </div>
+    </div>
+</div>
+<div class="row my-5 mx-5">
+    <div class="col float-start" style="font-size: 30px;"> 
+        <a routerLink="/step3" routerLinkActive="active" style="text-decoration: none; color:black;"> < Back </a>
+    </div>
+    <div class="col text-right"> 
+        <button class="btn btn-success px-4 py-3" routerLink="/step5" routerLinkActive="active"> Next ></button>
+    </div>
+</div>
