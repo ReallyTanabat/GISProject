@@ -12,7 +12,6 @@ import { Step4c2Component } from './components/step4c2/step4c2.component';
 import { Step4d2Component } from './components/step4d2/step4d2.component';
 import { Step4dComponent } from './components/step4d/step4d.component';
 import { MemberComponent } from './components/member/member.component';
-
 import { Step5aComponent } from './components/step5a/step5a.component';
 import { Step5bComponent } from './components/step5b/step5b.component';
 import { Step5cComponent } from './components/step5c/step5c.component';
@@ -20,7 +19,6 @@ import { Step5dComponent } from './components/step5d/step5d.component';
 import { Step5eComponent } from './components/step5e/step5e.component';
 import { Step5f1Component } from './components/step5f1/step5f1.component';
 import { Step5f2Component } from './components/step5f2/step5f2.component';
-
 import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
@@ -37,7 +35,6 @@ const routes: Routes = [
   { path: 'step5e', component: Step5eComponent},
   { path: 'step5f1', component: Step5f1Component},
   { path: 'step5f2', component: Step5f2Component},
-
   { path: 'step4b', component: Step4bComponent},
   { path: 'step4c', component: Step4cComponent},
   { path: 'step4c2', component: Step4c2Component},
