@@ -11,6 +11,7 @@ import { Step4cComponent } from './components/step4c/step4c.component';
 import { Step4c2Component } from './components/step4c2/step4c2.component';
 import { Step4d2Component } from './components/step4d2/step4d2.component';
 import { Step4dComponent } from './components/step4d/step4d.component';
+import { MemberComponent } from './components/member/member.component';
 
 const routes: Routes = [
   { path: 'step1', component: Step1Component },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'step4c2', component: Step4c2Component},
   { path: 'step4d', component: Step4dComponent},
   { path: 'step4d2', component: Step4d2Component},
+  { path: 'member', component: MemberComponent},
 
 
 ];

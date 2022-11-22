@@ -19,6 +19,7 @@ import { Step4cComponent } from './components/step4c/step4c.component';
 import { Step4c2Component } from './components/step4c2/step4c2.component';
 import { Step4dComponent } from './components/step4d/step4d.component';
 import { Step4d2Component } from './components/step4d2/step4d2.component';
+import { MemberComponent } from './components/member/member.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { Step4d2Component } from './components/step4d2/step4d2.component';
     Step4cComponent,
     Step4c2Component,
     Step4dComponent,
-    Step4d2Component
+    Step4d2Component,
+    MemberComponent
   ],
   imports: [
     BrowserModule,
