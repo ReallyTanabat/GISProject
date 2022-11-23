@@ -41,8 +41,7 @@ const routes: Routes = [
   { path: 'step4d', component: Step4dComponent},
   { path: 'step4d2', component: Step4d2Component},
   { path: 'member', component: MemberComponent},
-  { path: 'footer', component: FooterComponent},
-
+  { path: 'footer', component: FooterComponent}
 
 ];
 
@@ -66,8 +65,6 @@ export const rountingComponents = [
  Step5f1Component,
  Step5f2Component,
  FooterComponent,
-
-
  Step4c2Component,
  Step4cComponent,
  Step4d2Component,

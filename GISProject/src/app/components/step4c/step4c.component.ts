@@ -12,7 +12,7 @@ dataCheck: any[] = [];
 toShowData: any[] = []
 toShow: boolean = false
 object: any
-url: string = "http://1769-1-20-61-94.ap.ngrok.io"
+url: string = "http://f1ac-1-20-63-200.ap.ngrok.io"
 constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
