@@ -15,7 +15,7 @@ export class Step5Component implements OnInit {
   toShowData: any[] = []
   toShow: boolean = false
   object: any
-  url: string = "http://f1ac-1-20-63-200.ap.ngrok.io"
+  url: string = "http://c778-1-20-63-32.ap.ngrok.io"
   lati: any[] = []
   longti: any[] = []
   positioning: any[] = []

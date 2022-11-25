@@ -22,6 +22,7 @@ import { Step5f2Component } from './components/step5f2/step5f2.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
+  { path: '', redirectTo:'home', pathMatch:'full'},
   { path: 'step1', component: Step1Component },
   { path: 'home', component: HomeComponent},
   { path: 'step3', component: Step3Component},
